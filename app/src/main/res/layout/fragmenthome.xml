@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/constraintLayout2">
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="262dp"
+            app:srcCompat="@drawable/ethiocinema"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="30dp" tools:layout_editor_absoluteX="29dp"
+            android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
+            android:layout_marginRight="43dp" android:layout_marginEnd="43dp"
+            android:layout_alignParentStart="true" android:layout_marginLeft="43dp"
+            android:layout_marginStart="43dp" android:layout_alignParentLeft="true" android:layout_marginTop="3dp"
+            android:layout_alignParentTop="true"/>
+
+    <TextView
+            android:text="Coming Soon"
+            android:layout_width="130dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#830707"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            tools:ignore="MissingConstraints"
+            android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
+            android:layout_marginRight="263dp" android:layout_marginEnd="263dp" android:layout_alignParentBottom="true"
+            android:layout_marginBottom="317dp"/>
+
+    <Button
+            android:text="Leave Comment"
+            android:layout_width="150dp"
+            android:textColor="#FFFFFF"
+
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="571dp"
+            android:layout_marginStart="124dp"
+            android:layout_marginLeft="124dp" android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="137dp" android:layout_marginEnd="137dp" android:layout_alignParentBottom="true"
+            android:layout_marginBottom="18dp" android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="207dp"
+            android:layout_marginBottom="85dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_alignBottom="@+id/button">
+
+        <ImageView
+                android:layout_width="127dp"
+                android:layout_height="197dp" app:srcCompat="@drawable/amaregn"
+                android:id="@+id/imageView5"
+                tools:ignore="MissingConstraints"
+        />
+        <ImageView
+                android:layout_width="136dp"
+                android:layout_height="193dp" app:srcCompat="@drawable/berabish"
+                android:id="@+id/imageView6"
+             />
+
+
+        <ImageView
+                android:layout_width="131dp"
+                android:layout_height="196dp" app:srcCompat="@drawable/asmelash"
+                android:id="@+id/imageView4"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

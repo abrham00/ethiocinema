@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="OneCinema" type="the.app.ethiocinema.data.Cinema"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".cinemaDetail">
+
+        <TextView
+                android:text="@{OneCinema.name}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" android:layout_marginTop="76dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="0.498" android:textSize="24sp"
+                android:textColor="@android:color/black" android:id="@+id/cinema_name_cx"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="378dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.32"
+                android:id="@+id/linearLayout"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/cinema_name_cx"
+                app:layout_constraintVertical_bias="0.05">
+            <TextView
+                    android:drawableLeft="@drawable/ic_call_black_24dp"
+                    android:text="@{OneCinema.phone}"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/cinema_detail_phone"
+                    android:layout_margin="5dp"/>
+            <TextView
+                    android:drawableLeft="@drawable/ic_language_black_24dp"
+                    android:text="@{OneCinema.weblink}"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/cinema_detail_web"
+                    android:layout_margin="5dp"/>
+            <TextView
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                    android:text="@{OneCinema.location}"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/cinema_detail_location"
+                    android:layout_margin="5dp"/>
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button"
+                android:text="Call"
+                android:layout_width="265dp"
+                android:layout_height="38dp" android:id="@+id/callbutton"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp" app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintHorizontal_bias="0.498" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.152"
+                android:background="@android:color/holo_red_dark" android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
